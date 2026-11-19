@@ -13,4 +13,8 @@ public interface VehiculeService {
     Vehicule saveVehicule(Vehicule vehicule);
 
     void deleteVehicule(Long id);
+    Vehicule assignVehiculeToAgence(Long idVehicule, Long idAgence);
+    Vehicule unassignVehiculeToAgence(Long idVehicule, Long idAgence);
+    Vehicule assignVehiculeToEquipement(Long idVehicule, Long idEquipement);
+    Vehicule unassignVehiculeToEquipement(Long idVehicule, Long idEquipement);
 }
